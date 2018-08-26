@@ -1,0 +1,6 @@
+framework module Pods_diversify {
+  umbrella header "Pods-diversify-umbrella.h"
+
+  export *
+  module * { export * }
+}
