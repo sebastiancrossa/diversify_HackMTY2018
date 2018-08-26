@@ -14,6 +14,7 @@
 		9812CF1621321DC3009D825F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9812CF1421321DC3009D825F /* LaunchScreen.storyboard */; };
 		9812CF212132212D009D825F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9812CF202132212D009D825F /* LoginVC.swift */; };
 		988D3BCF21327C9C00C8512B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 988D3BCE21327C9C00C8512B /* GoogleService-Info.plist */; };
+		988D3BD121327E1700C8512B /* HomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988D3BD021327E1700C8512B /* HomeScreenVC.swift */; };
 		F2CDB16EF986F379B30CAC37 /* Pods_diversify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C34C1A5E30C0ADEF10BEC9E /* Pods_diversify.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		9812CF1721321DC3009D825F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9812CF202132212D009D825F /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		988D3BCE21327C9C00C8512B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		988D3BD021327E1700C8512B /* HomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenVC.swift; sourceTree = "<group>"; };
 		9C34C1A5E30C0ADEF10BEC9E /* Pods_diversify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_diversify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F1EBA1A3E5F7361E6D80A9A /* Pods-diversify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-diversify.debug.xcconfig"; path = "Pods/Target Support Files/Pods-diversify/Pods-diversify.debug.xcconfig"; sourceTree = "<group>"; };
 		DE2F36B6DF326B5D0727B4A0 /* Pods-diversify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-diversify.release.xcconfig"; path = "Pods/Target Support Files/Pods-diversify/Pods-diversify.release.xcconfig"; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				9812CF202132212D009D825F /* LoginVC.swift */,
+				988D3BD021327E1700C8512B /* HomeScreenVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				9812CF1121321DC2009D825F /* diversify.xcdatamodeld in Sources */,
 				9812CF0921321DC2009D825F /* AppDelegate.swift in Sources */,
 				9812CF212132212D009D825F /* LoginVC.swift in Sources */,
+				988D3BD121327E1700C8512B /* HomeScreenVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
