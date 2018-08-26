@@ -16,9 +16,6 @@
         <array key="SanFranciscoDisplay-Medium.otf">
             <string>SanFranciscoDisplay-Medium</string>
         </array>
-        <array key="SanFranciscoDisplay-Regular.otf">
-            <string>SanFranciscoDisplay-Regular</string>
-        </array>
     </customFonts>
     <scenes>
         <!--Home ScreenVC-->
@@ -43,95 +40,101 @@
                                 <rect key="frame" x="152" y="100" width="71" height="12"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JVP-tD-Tdt">
-                                <rect key="frame" x="16" y="120" width="375" height="290"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CAL-e8-zAN">
-                                    <size key="itemSize" width="319" height="255"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="experienceCell" id="P4I-9a-t2G" customClass="ExperienceCell" customModule="diversify" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="17.5" width="319" height="255"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="expopublic_title" translatesAutoresizingMaskIntoConstraints="NO" id="0C3-TB-zHr">
+                                <rect key="frame" x="110" y="385" width="155" height="12"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fof-4C-xsb">
+                                <rect key="frame" x="28" y="120" width="319" height="255"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="experiencia1" translatesAutoresizingMaskIntoConstraints="NO" id="j5S-LI-YIp">
+                                        <rect key="frame" x="0.0" y="0.0" width="319" height="255"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="319" height="255"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHm-Zg-FFH">
-                                                    <rect key="frame" x="114" y="147" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="experiencia1" translatesAutoresizingMaskIntoConstraints="NO" id="f2n-vc-6cw">
-                                                    <rect key="frame" x="-26" y="0.0" width="378" height="255"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Preparar tacos en una carreta" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsw-E1-58c">
-                                                    <rect key="frame" x="25" y="86" width="131" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Heavy" family="San Francisco Display" pointSize="18"/>
-                                                    <color key="textColor" red="1" green="0.98039215686274506" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YG1-81-gqP">
-                                                    <rect key="frame" x="25" y="132" width="266" height="49"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <string key="text">Tienes la oportunidad de vivir una de las experiencias más cercanas a México posible, junto con un completo  profesional de tacos</string>
-                                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="12"/>
-                                                    <color key="textColor" red="1" green="0.98039215690000003" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$250 por persona" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qy-Ix-UyF">
-                                                    <rect key="frame" x="125" y="235" width="69" height="11"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="9"/>
-                                                    <color key="textColor" red="1" green="0.98039215690000003" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUW-6t-yMs">
-                                                    <rect key="frame" x="24" y="194" width="271" height="33"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" image="contratar3x"/>
-                                                    <connections>
-                                                        <action selector="contratarButtonWasPressed:" destination="P4I-9a-t2G" eventType="touchUpInside" id="sva-Ht-jPY"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="f2n-vc-6cw" secondAttribute="trailing" constant="-33" id="1kF-4m-3fc"/>
-                                            <constraint firstAttribute="bottom" secondItem="f2n-vc-6cw" secondAttribute="bottom" id="En9-5m-c0K"/>
-                                            <constraint firstItem="f2n-vc-6cw" firstAttribute="leading" secondItem="P4I-9a-t2G" secondAttribute="leading" constant="-26" id="Qts-vb-W9i"/>
-                                            <constraint firstItem="f2n-vc-6cw" firstAttribute="top" secondItem="P4I-9a-t2G" secondAttribute="top" id="wqG-r2-awb"/>
-                                        </constraints>
-                                        <connections>
-                                            <outlet property="experienceDescription" destination="YG1-81-gqP" id="XQ9-nd-zpL"/>
-                                            <outlet property="experienceImage" destination="f2n-vc-6cw" id="Yxg-mo-QcA"/>
-                                            <outlet property="experienceTitle" destination="qsw-E1-58c" id="ziY-hs-b9I"/>
-                                            <outlet property="priceLabel" destination="4qy-Ix-UyF" id="una-5a-sOD"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Preparar tacos en una carreta" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcQ-eT-Qzb">
+                                        <rect key="frame" x="25" y="86" width="134" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Heavy" family="San Francisco Display" pointSize="18"/>
+                                        <color key="textColor" red="1" green="0.98039215690000003" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQa-Mw-AD6">
+                                        <rect key="frame" x="25" y="132" width="269" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Tienes la oportunidad de vivir una de las experiencias más cercanas a México posible, junto con un completo  profesional de tacos</string>
+                                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="12"/>
+                                        <color key="textColor" red="1" green="0.98039215690000003" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contratar3x" translatesAutoresizingMaskIntoConstraints="NO" id="HjE-wQ-Psu">
+                                        <rect key="frame" x="24" y="199" width="271" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$250 por persona" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iyR-nP-lDC">
+                                        <rect key="frame" x="118" y="234" width="71" height="16"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="9"/>
+                                        <color key="textColor" red="1" green="0.98039215690000003" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="exp_left_side" translatesAutoresizingMaskIntoConstraints="NO" id="0Ki-Wb-XLB">
+                                <rect key="frame" x="-7" y="120" width="20" height="255"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="exp_right_side" translatesAutoresizingMaskIntoConstraints="NO" id="a9k-6P-adp">
+                                <rect key="frame" x="362" y="120" width="20" height="255"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_indigena" translatesAutoresizingMaskIntoConstraints="NO" id="VZ4-id-XX7">
+                                <rect key="frame" x="28" y="405" width="319" height="255"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$250 por persona" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tth-CF-QCI">
+                                <rect key="frame" x="153" y="639" width="71" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="9"/>
+                                <color key="textColor" red="1" green="0.98039215690000003" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contratar3x" translatesAutoresizingMaskIntoConstraints="NO" id="2EN-Jt-Rkl">
+                                <rect key="frame" x="53" y="604" width="271" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Preparar tacos en una carreta" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCS-r7-FSF">
+                                <rect key="frame" x="53" y="491" width="134" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SanFranciscoDisplay-Heavy" family="San Francisco Display" pointSize="18"/>
+                                <color key="textColor" red="1" green="0.98039215690000003" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Los fundamentos de la lengua Náhuatl están a tu alcance. Aprende a lado de una nativa las bases de esta lengua tan preciada" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVe-7a-QiF">
+                                <rect key="frame" x="53" y="537" width="271" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="12"/>
+                                <color key="textColor" red="1" green="0.98039215690000003" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="middle_left" translatesAutoresizingMaskIntoConstraints="NO" id="anc-S1-vyl">
+                                <rect key="frame" x="-7" y="405" width="20" height="255"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="middle_right" translatesAutoresizingMaskIntoConstraints="NO" id="lD9-EK-y97">
+                                <rect key="frame" x="362" y="405" width="20" height="255"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JVP-tD-Tdt" secondAttribute="bottom" constant="257" id="2S3-9x-GrN"/>
                             <constraint firstItem="oae-g6-Hwz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="34a-Vw-GMG"/>
                             <constraint firstItem="oae-g6-Hwz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Bij-bF-X74"/>
                             <constraint firstItem="oae-g6-Hwz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ED3-Sl-aoj"/>
-                            <constraint firstItem="JVP-tD-Tdt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="vF6-Y2-kzD"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JVP-tD-Tdt" secondAttribute="trailing" constant="-16" id="xZi-i5-pHu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="experienceCollectionView" destination="JVP-tD-Tdt" id="qvO-Qe-TaT"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -139,8 +142,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bg_indigena" width="957" height="765"/>
         <image name="contratar3x" width="813" height="99"/>
+        <image name="exp_left_side" width="39" height="765"/>
+        <image name="exp_right_side" width="39" height="765"/>
         <image name="experiencia1" width="957" height="765"/>
+        <image name="expopublic_title" width="459" height="42"/>
+        <image name="middle_left" width="39" height="765"/>
+        <image name="middle_right" width="39" height="765"/>
         <image name="populares" width="213" height="39"/>
         <image name="search" width="1032" height="174"/>
         <image name="top-background" width="1125" height="492"/>
