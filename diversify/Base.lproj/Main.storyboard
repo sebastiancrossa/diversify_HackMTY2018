@@ -40,7 +40,7 @@
                                 <rect key="frame" x="152" y="100" width="71" height="12"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="expopublic_title" translatesAutoresizingMaskIntoConstraints="NO" id="0C3-TB-zHr">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="4u_title" translatesAutoresizingMaskIntoConstraints="NO" id="0C3-TB-zHr">
                                 <rect key="frame" x="110" y="385" width="155" height="12"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -67,10 +67,6 @@
                                         <color key="textColor" red="1" green="0.98039215690000003" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contratar3x" translatesAutoresizingMaskIntoConstraints="NO" id="HjE-wQ-Psu">
-                                        <rect key="frame" x="24" y="199" width="271" height="33"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$250 por persona" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iyR-nP-lDC">
                                         <rect key="frame" x="118" y="234" width="71" height="16"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -78,6 +74,14 @@
                                         <color key="textColor" red="1" green="0.98039215690000003" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ahy-k5-ly0">
+                                        <rect key="frame" x="24" y="199" width="271" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="contratar3x"/>
+                                        <connections>
+                                            <action selector="popularButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U1E-h8-3OX"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -100,10 +104,6 @@
                                 <color key="textColor" red="1" green="0.98039215690000003" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contratar3x" translatesAutoresizingMaskIntoConstraints="NO" id="2EN-Jt-Rkl">
-                                <rect key="frame" x="53" y="604" width="271" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Preparar tacos en una carreta" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCS-r7-FSF">
                                 <rect key="frame" x="53" y="491" width="134" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -126,6 +126,14 @@
                                 <rect key="frame" x="362" y="405" width="20" height="255"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHP-nV-pDI">
+                                <rect key="frame" x="53" y="604" width="271" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="contratar3x"/>
+                                <connections>
+                                    <action selector="recommendedWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sVo-Qi-7pt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -135,6 +143,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="popularButton" destination="Ahy-k5-ly0" id="cFa-j7-wa7"/>
+                        <outlet property="recommendedButton" destination="nHP-nV-pDI" id="fCJ-A7-99w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -142,12 +154,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="4u_title" width="534" height="42"/>
         <image name="bg_indigena" width="957" height="765"/>
         <image name="contratar3x" width="813" height="99"/>
         <image name="exp_left_side" width="39" height="765"/>
         <image name="exp_right_side" width="39" height="765"/>
         <image name="experiencia1" width="957" height="765"/>
-        <image name="expopublic_title" width="459" height="42"/>
         <image name="middle_left" width="39" height="765"/>
         <image name="middle_right" width="39" height="765"/>
         <image name="populares" width="213" height="39"/>

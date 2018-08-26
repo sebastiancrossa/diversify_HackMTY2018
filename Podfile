@@ -9,5 +9,6 @@ target 'diversify' do
 	pod 'Firebase/Core'
 	pod 'Firebase/Database'
 	pod 'Firebase/Auth'
+	pod 'FBSDKLoginKit'
 
 end
