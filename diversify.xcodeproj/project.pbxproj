@@ -13,6 +13,10 @@
 		9812CF1321321DC3009D825F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9812CF1221321DC3009D825F /* Assets.xcassets */; };
 		9812CF1621321DC3009D825F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9812CF1421321DC3009D825F /* LaunchScreen.storyboard */; };
 		9812CF212132212D009D825F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9812CF202132212D009D825F /* LoginVC.swift */; };
+		983FA59C213285D90058A731 /* SanFranciscoDisplay-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 983FA59B213285D90058A731 /* SanFranciscoDisplay-Heavy.otf */; };
+		983FA5A0213286ED0058A731 /* SanFranciscoDisplay-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 983FA59F213286ED0058A731 /* SanFranciscoDisplay-Regular.otf */; };
+		983FA5A221328A5B0058A731 /* ExperienceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983FA5A121328A5B0058A731 /* ExperienceCell.swift */; };
+		983FA5A621328BFC0058A731 /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983FA5A521328BFC0058A731 /* Experience.swift */; };
 		988D3BCF21327C9C00C8512B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 988D3BCE21327C9C00C8512B /* GoogleService-Info.plist */; };
 		988D3BD121327E1700C8512B /* HomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988D3BD021327E1700C8512B /* HomeScreenVC.swift */; };
 		F2CDB16EF986F379B30CAC37 /* Pods_diversify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C34C1A5E30C0ADEF10BEC9E /* Pods_diversify.framework */; };
@@ -27,6 +31,11 @@
 		9812CF1521321DC3009D825F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9812CF1721321DC3009D825F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9812CF202132212D009D825F /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		983FA59B213285D90058A731 /* SanFranciscoDisplay-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Heavy.otf"; sourceTree = "<group>"; };
+		983FA59D213285E00058A731 /* SanFranciscoDisplay-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Medium.otf"; sourceTree = "<group>"; };
+		983FA59F213286ED0058A731 /* SanFranciscoDisplay-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Regular.otf"; sourceTree = "<group>"; };
+		983FA5A121328A5B0058A731 /* ExperienceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceCell.swift; sourceTree = "<group>"; };
+		983FA5A521328BFC0058A731 /* Experience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experience.swift; sourceTree = "<group>"; };
 		988D3BCE21327C9C00C8512B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		988D3BD021327E1700C8512B /* HomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenVC.swift; sourceTree = "<group>"; };
 		9C34C1A5E30C0ADEF10BEC9E /* Pods_diversify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_diversify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +93,7 @@
 		9812CF0721321DC2009D825F /* diversify */ = {
 			isa = PBXGroup;
 			children = (
+				983FA59E213285E30058A731 /* Extras */,
 				9812CF1F21322092009D825F /* Model */,
 				9812CF1E21322088009D825F /* View */,
 				9812CF1D2132206C009D825F /* Controller */,
@@ -110,6 +120,7 @@
 		9812CF1E21322088009D825F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				983FA5A121328A5B0058A731 /* ExperienceCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -117,8 +128,19 @@
 		9812CF1F21322092009D825F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				983FA5A521328BFC0058A731 /* Experience.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		983FA59E213285E30058A731 /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				983FA59B213285D90058A731 /* SanFranciscoDisplay-Heavy.otf */,
+				983FA59D213285E00058A731 /* SanFranciscoDisplay-Medium.otf */,
+				983FA59F213286ED0058A731 /* SanFranciscoDisplay-Regular.otf */,
+			);
+			path = Extras;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,8 +203,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				983FA59C213285D90058A731 /* SanFranciscoDisplay-Heavy.otf in Resources */,
 				988D3BCF21327C9C00C8512B /* GoogleService-Info.plist in Resources */,
 				9812CF1621321DC3009D825F /* LaunchScreen.storyboard in Resources */,
+				983FA5A0213286ED0058A731 /* SanFranciscoDisplay-Regular.otf in Resources */,
 				9812CF1321321DC3009D825F /* Assets.xcassets in Resources */,
 				9812CF0E21321DC2009D825F /* Main.storyboard in Resources */,
 			);
@@ -241,7 +265,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9812CF1121321DC2009D825F /* diversify.xcdatamodeld in Sources */,
+				983FA5A221328A5B0058A731 /* ExperienceCell.swift in Sources */,
 				9812CF0921321DC2009D825F /* AppDelegate.swift in Sources */,
+				983FA5A621328BFC0058A731 /* Experience.swift in Sources */,
 				9812CF212132212D009D825F /* LoginVC.swift in Sources */,
 				988D3BD121327E1700C8512B /* HomeScreenVC.swift in Sources */,
 			);
