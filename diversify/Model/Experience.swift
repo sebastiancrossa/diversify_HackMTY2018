@@ -19,6 +19,7 @@ class Experience {
         self.description = description
     }
     
+    /*
     static func fetchExperiences() -> [Experience]
     {
         return [
@@ -27,4 +28,5 @@ class Experience {
             Experience(title: "Crea una artesania propia de Guatemala", image: UIImage(named: "experiencia1")!, description: "La artesania de Guatemala es una parte fundamental para la belleza Latinoamerica."),
         ]
     }
+ */
 }

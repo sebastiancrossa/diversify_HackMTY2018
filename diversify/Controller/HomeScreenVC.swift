@@ -8,6 +8,7 @@
 
 import UIKit
 import FBSDKLoginKit
+import Firebase
 
 class HomeScreenVC: UIViewController {
     
@@ -18,16 +19,22 @@ class HomeScreenVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
     }
-
     
     @IBAction func popularButtonWasPressed(_ sender: Any) {
-        
+        if (FBSDKAccessToken.current() != nil) {
+            self.performSegue(withIdentifier: "homeToSuccess", sender: self)
+        } else {
+            self.performSegue(withIdentifier: "homeToFBSign", sender: self)
+        }
     }
 
     @IBAction func recommendedWasPressed(_ sender: Any) {
-        
+        if (FBSDKAccessToken.current() != nil) {
+            
+        } else {
+            
+        }
     }
     
     

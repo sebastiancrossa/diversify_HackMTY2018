@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		980DD5862132C41400D776E7 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980DD5852132C41400D776E7 /* DataService.swift */; };
+		980DD5882132C57700D776E7 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980DD5872132C57700D776E7 /* AuthService.swift */; };
+		980DD58A2132C86300D776E7 /* SuccessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980DD5892132C86200D776E7 /* SuccessVC.swift */; };
+		980DD58C2132C8B000D776E7 /* FBSignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980DD58B2132C8B000D776E7 /* FBSignInVC.swift */; };
 		9812CF0921321DC2009D825F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9812CF0821321DC2009D825F /* AppDelegate.swift */; };
 		9812CF0E21321DC2009D825F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9812CF0C21321DC2009D825F /* Main.storyboard */; };
 		9812CF1121321DC2009D825F /* diversify.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9812CF0F21321DC2009D825F /* diversify.xcdatamodeld */; };
@@ -23,6 +27,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		980DD5852132C41400D776E7 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		980DD5872132C57700D776E7 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		980DD5892132C86200D776E7 /* SuccessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessVC.swift; sourceTree = "<group>"; };
+		980DD58B2132C8B000D776E7 /* FBSignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBSignInVC.swift; sourceTree = "<group>"; };
 		9812CF0521321DC2009D825F /* diversify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = diversify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9812CF0821321DC2009D825F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9812CF0D21321DC2009D825F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -113,6 +121,8 @@
 			children = (
 				9812CF202132212D009D825F /* LoginVC.swift */,
 				988D3BD021327E1700C8512B /* HomeScreenVC.swift */,
+				980DD5892132C86200D776E7 /* SuccessVC.swift */,
+				980DD58B2132C8B000D776E7 /* FBSignInVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -129,6 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				983FA5A521328BFC0058A731 /* Experience.swift */,
+				980DD5852132C41400D776E7 /* DataService.swift */,
+				980DD5872132C57700D776E7 /* AuthService.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -271,11 +283,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				9812CF1121321DC2009D825F /* diversify.xcdatamodeld in Sources */,
+				980DD58A2132C86300D776E7 /* SuccessVC.swift in Sources */,
+				980DD5862132C41400D776E7 /* DataService.swift in Sources */,
 				983FA5A221328A5B0058A731 /* ExperienceCell.swift in Sources */,
 				9812CF0921321DC2009D825F /* AppDelegate.swift in Sources */,
 				983FA5A621328BFC0058A731 /* Experience.swift in Sources */,
+				980DD58C2132C8B000D776E7 /* FBSignInVC.swift in Sources */,
 				9812CF212132212D009D825F /* LoginVC.swift in Sources */,
 				988D3BD121327E1700C8512B /* HomeScreenVC.swift in Sources */,
+				980DD5882132C57700D776E7 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +439,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 29BFEDRFS6;
 				INFOPLIST_FILE = diversify/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -442,6 +459,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 29BFEDRFS6;
 				INFOPLIST_FILE = diversify/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
